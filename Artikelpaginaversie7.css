@@ -1,0 +1,115 @@
+/* Opdracht 3.1b, 3.2 en 3.3
+Hieronder mijn code waarin ik de opdrachten van week 3 heb toegepast: box model, positioning, typografie en CSS columns.
+
+Opdracht 3.1 Box Model
+b. Layout met box model, zie code hieronder.
+
+Opdracht 3.2 Typografie: Easy to Read
+Ik heb de font-size van de main gezet op 1em, omdat dit een goed leesbare grootte is. Het lijkt erg groot, maar hier ben je als lezer snel aan gewend en dan is het prettig te lezen. De font-size van de aside heb ik gezet op .9em, omdat dit de sidebar is en de informatie die hierin staat hoeft minder op te vallen dan de informatie in de main.
+
+De line-height heb ik vergroot naar 1.5em, omdat dit zorgt voor meer witruimte, waardoor de tekst beter leesbaar wordt (Het geeft rust). Om dezelfde reden heb ik een padding gebruikt van 2 tot 2.5em.
+
+Ik heb achtergrondkleuren gebruikt om te zorgen voor contrast en een prettig leesbare pagina. Zwarte tekst op een volledig wit beeld is namelijk niet prettig leesbaar.
+
+Voor de regellengte heb ik gekozen voor 10 tot 20 woorden, zodat de lezer makkelijk ziet waar hij moet beginnen als hij begint bij een volgende regel.
+
+Opdracht 3.3 CSS Columns & Units
+Voor deze opdracht heb ik het artikel over CSS Columns bestudeerd. Vervolgens heb ik het stuk met de gerelateerde artikelen in kolommen gezet.
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Opdracht 3.2 */
+body {
+    font-family: verdana, calibri, sans-serif;
+    line-height: 1.5em;
+}
+
+/* Opdracht 3.1 */
+
+body > header {
+    background-color: #fecb2f;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+
+/* Opdracht 3.2 */
+    padding: 2em;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    background-color: aliceblue;
+
+/* Opdracht 3.2 */
+    font-size: 1em;
+    min-width: 30.5em;
+
+    width: 50%;
+    float: left;
+    margin: 0px 0px 1% 21%;
+
+/* Opdracht 3.2 */
+    padding: 2.5em;
+}
+
+.related {
+    background-color: #dde7ef;
+
+    /* Opdracht 3.2 */
+    font-size: 1em;
+
+    width: 80%;
+    clear: left;
+    margin: 0px 0px 1% 21%;
+
+/* Opdracht 3.2 */
+    padding: 2em;
+
+/* Opdracht 3.3 */
+    -webkit-columns: 3 3em;
+    column-count: 3;
+    column-width: 3em;
+}
+
+/* Opdracht 3.3 */
+.related > h2 {
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+/* Opdracht 3.3 */
+header > h3 {
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+aside {
+    background-color: #dde7ef;
+
+    /* Opdracht 3.2 */
+    font-size: .9em;
+
+    width: 28%;
+    position: absolute;
+    top: .6em;
+    right: 0em;
+
+/* Opdracht 3.2 */
+    padding: 2em;
+}
+
+aside + footer {
+    background-color: #bdd7ee;
+    margin: 0% 0% 0% 21%;
+
+/* Opdracht 3.2 */
+    padding: 2em;
+}

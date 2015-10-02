@@ -1,0 +1,101 @@
+/* Opdracht 3.1a Box Model
+
+Verschil: inline-block zet block-level elementen naast elkaar, bij float kun je kiezen of
+de elementen links of rechts komen te staan en bij positioning kun je de precieze positie van elementen bepalen.
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Opdracht 3.2 */
+body {
+    font-family: verdana, calibri, sans-serif;
+    line-height: 1.5em;
+}
+
+/* Opdracht 3.1 */
+
+body > header {
+    background-color: #fecb2f;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+
+/* Opdracht 3.2 */
+    padding: 2em;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    background-color: aliceblue;
+
+/* Opdracht 3.2 */
+    font-size: 1em;
+    min-width: 30.5em;
+
+    width: 50%;
+    float: left;
+    margin: 0px 0px 1% 21%;
+
+/* Opdracht 3.2 */
+    padding: 2.5em;
+}
+
+.related {
+    background-color: #dde7ef;
+
+    /* Opdracht 3.2 */
+    font-size: 1em;
+
+    width: 80%;
+    clear: left;
+    margin: 0px 0px 1% 21%;
+
+/* Opdracht 3.2 */
+    padding: 2em;
+
+}
+
+.related > article {
+    display: inline-block;
+    width: 18%;
+    vertical-align: top;
+    padding: 2%;
+}
+
+header h3 {
+    padding: 0em 0em 2em 0em;
+}
+
+aside {
+    background-color: #dde7ef;
+
+    /* Opdracht 3.2 */
+    font-size: .9em;
+
+    width: 28%;
+    position: absolute;
+    top: .6em;
+    right: 0em;
+
+/* Opdracht 3.2 */
+    padding: 2em;
+}
+
+aside + footer {
+    background-color: #bdd7ee;
+    margin: 0% 0% 0% 21%;
+
+/* Opdracht 3.2 */
+    padding: 2em;
+}
+
+
+
+
